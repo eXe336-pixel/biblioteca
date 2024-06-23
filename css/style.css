@@ -21,6 +21,13 @@ main {
     align-items: center;
     flex-direction: column;
 }
+.container-error{
+    color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .titulo{    
     color: #ffffff;
     font-size: 2.5em;
