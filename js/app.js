@@ -40,6 +40,7 @@ function anadirLibro(titulo, autor, anoPublicacion, genero)
     biblioteca.push(libro);
 }
 let error = document.querySelector("#mensaje");
+
 //manejador de eventos cuando inputEnter se le da enter con el teclado
 inputEnter.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
@@ -47,18 +48,22 @@ inputEnter.addEventListener("keyup", function(event) {
         botonBuscar.click();
     }
 });
-
+//Manejador de eventos cuando se hace click en el boton buscar
 botonBuscar.addEventListener("click", function() {
     error.innerHTML = "";
     let autorIngresado = document.querySelector("#input-autor").value;
-    //controlar que el usuario haya ingresado un autor y no un numero con regex 
+    //Validamos que el usuario haya ingresado un autor valido, nada de numeros ni caracteres especiales
     let regex = /^[a-zA-Z\s]*$/;
     if (autorIngresado === "")
     {   let mensaje = "Ingrese un autor"
         error.innerHTML = mensaje;        
     }
     else if (regex.test(autorIngresado))
-        {
+
+        {   //Limpiamos los divs de libros anteriores
+            let divs = document.querySelectorAll(".libros");
+            divs.forEach(div => div.remove());
+
             let librosAutor = buscarLibro(autorIngresado);        
             if (librosAutor.length === 0)
             {
@@ -67,11 +72,11 @@ botonBuscar.addEventListener("click", function() {
             }
             else
             {
-                //crear un div que contendrá los libros del autor e insertarlo en el DOM
+                //Creamos un div que contendra los libros del autor
                 let divLibros = document.createElement("div");
                 divLibros.classList.add("libros");
                 document.querySelector("#contenedor-libros").appendChild(divLibros);
-                //iterar sobre los libros del autor y mostrarlos en el div
+                
                 librosAutor.forEach(libro => {
                     let p = document.createElement("p");
                     p.textContent = libro.info();
@@ -87,6 +92,7 @@ botonBuscar.addEventListener("click", function() {
     
 });
 
+//Añadimos libros a la biblioteca
 anadirLibro("El amor en los tiempos del cólera","Márquez",1985,"Romance");
 anadirLibro("La casa de los espíritus","Allende",1982,"Realismo mágico");
 console.log(biblioteca);
