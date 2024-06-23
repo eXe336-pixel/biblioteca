@@ -69,6 +69,7 @@ botonBuscar.addEventListener("click", function() {
             {
                 mensaje = "No se encontraron libros de ese autor";
                 error.innerHTML = mensaje;
+                inputEnter.value = "";                
             }
             else
             {
@@ -88,6 +89,7 @@ botonBuscar.addEventListener("click", function() {
     else {
         mensaje = "Ingrese un autor válido";
         error.innerHTML = mensaje;
+        inputEnter.value = "";
     }     
     
 });
