@@ -3,7 +3,7 @@
 <p>Se crea un constructor de libro con los atributos titulo, autor, añoPublicacion y genero </p>
 <p>Luego se crear libros que seran añadidos a un array llamado biblioteca</p>
 
-<image src="[img/loading.gif](https://i.ibb.co/K5NKchg/Screenshot-2024-06-23-130434.png)" id="loading" class="loading"></image>
+<span>https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png](https://github.com/eXe336-pixel/biblioteca/blob/master/preview.png</span><span>)</span>
 
 <h2>Tareas</h2>
 <h3>Se debe crear una funcion capaz de recibir un autor como parametro y devolver un array con los libros escritos por ese autor</h3>
