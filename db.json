@@ -1,0 +1,15 @@
+[
+    {"titulo":"El señor de los anillos","autor":"Tolkien","anoPublicacion":1954,"genero":"Fantasía"},
+    {"titulo":"El código Da Vinci","autor":"Brown","anoPublicacion":2003,"genero":"Misterio"},
+    {"titulo":"Cien años de soledad","autor":"Márquez","anoPublicacion":1967,"genero":"Realismo mágico"},
+    {"titulo":"El principito","autor":"Saint-Exupéry","anoPublicacion":1943,"genero":"Infantil"},
+    {"titulo":"El alquimista","autor":"Coelho","anoPublicacion":1988,"genero":"Autoayuda"},
+    {"titulo":"El nombre de la rosa","autor":"Eco","anoPublicacion":1980,"genero":"Misterio"},
+    {"titulo":"El retrato de Dorian Gray","autor":"Wilde","anoPublicacion":1890,"genero":"Drama"},
+    {"titulo":"El perfume","autor":"Süskind","anoPublicacion":1985,"genero":"Novela negra"},
+    {"titulo":"La sombra del viento","autor":"Zafón","anoPublicacion":2001,"genero":"Misterio"},
+    {"titulo":"La ladrona de libros","autor":"Zusak","anoPublicacion":2005,"genero":"Drama"},
+    {"titulo":"El guardián entre el centeno","autor":"Zusak","anoPublicacion":1951,"genero":"Drama"},
+    {"titulo":"1984","autor":"Zusak","anoPublicacion":1949,"genero":"Ciencia ficción"},
+    {"titulo":"Rebelión en la granja","autor":"Orwell","anoPublicacion":1945,"genero":"Fábula"}
+]

@@ -23,6 +23,22 @@ let libro11 = new Libro("El guardián entre el centeno", "Zusak", 1951, "Drama")
 let libro12 = new Libro("1984", "Zusak", 1949, "Ciencia ficción");
 let libro13 = new Libro("Rebelión en la granja", "Orwell", 1945, "Fábula");
 
+//escribir los libros en formato json
+console.log(JSON.stringify(libro1));
+console.log(JSON.stringify(libro2));
+console.log(JSON.stringify(libro3));
+console.log(JSON.stringify(libro4));
+console.log(JSON.stringify(libro5));
+console.log(JSON.stringify(libro6));
+console.log(JSON.stringify(libro7));
+console.log(JSON.stringify(libro8));
+console.log(JSON.stringify(libro9));
+console.log(JSON.stringify(libro10));
+console.log(JSON.stringify(libro11));
+console.log(JSON.stringify(libro12));
+console.log(JSON.stringify(libro13));
+
+
 let biblioteca = [libro1, libro2, libro3, libro4, libro5, libro6, libro7, libro8, libro9, libro10, libro11, libro12, libro13];
 
 function buscarLibro(autor)
